@@ -19,6 +19,7 @@ public class Hooks {
     public void beforeScenario(Scenario scenario) throws Exception{
         Configuration.load();
         Configuration.print();
+        System.out.println("new changes");
 
         System.setProperty("webdriver.gecko.driver", new File("drivers/geckodriver").getAbsolutePath());
         System.setProperty("webdriver.chrome.driver", new File("drivers/chromedriver").getAbsolutePath());
